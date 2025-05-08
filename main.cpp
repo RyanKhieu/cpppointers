@@ -37,10 +37,10 @@ int main() {
     char* chPtr = &ch;
     ch = 'J';
     cout << "1st character: " << *chPtr << endl;
-    cout << "Memory address: " << &chPtr << endl;
+    cout << "Memory address: " << (void*)chPtr << endl;
     *chPtr = 'R';
     cout << "2nd character: " << *chPtr << endl;
-    cout << "Memory address: " << &chPtr << endl;
+    cout << "Memory address: " << (void*)chPtr << endl;
     
     return 0;
 }
